@@ -43,6 +43,8 @@ public class ChessMatch {
 	private void validateSourcePosition (Position position) {
 		if (!board.thereIsAPiece(position)) {
 			throw new ChessException("There is no piece on source position");
+		} if (!board.piece(position).IsTherePossibleMove()) {
+			throw new ChessException("There is no possible moves for the chosen piece");
 		}
 	}
 	
