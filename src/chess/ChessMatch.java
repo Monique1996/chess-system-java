@@ -7,7 +7,9 @@ import chess.pieces.King;
 import chess.pieces.Rook;
 
 public class ChessMatch {
-
+	
+	private int turn;
+	private Color currentPlayer;
 	private Board board;
 	
 	public ChessMatch() {
